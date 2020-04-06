@@ -1,18 +1,18 @@
 for (var i = 0; i < document.querySelectorAll(".drum").length; i += 1) {
 
     document.querySelectorAll(".drum")[i].addEventListener("click", function () {
-    
-    var buttonInnerHTML = this.innerHTML;
-    
-    makeSound(buttonInnerHTML);
-    
+
+        var buttonInnerHTML = this.innerHTML;
+
+        makeSound(buttonInnerHTML);
+
     });
 
 }
 
 
-document.addEventListener("keydown", function(event) {
-    
+document.addEventListener("keydown", function (event) {
+
     makeSound(event.key)
 
 })
@@ -25,14 +25,28 @@ function makeSound(key) {
             var tom1 = new Audio('sounds/tom-1.mp3');
             tom1.play();
             break;
-    
+
+        case "ц":
+            var tom1 = new Audio('sounds/tom-1.mp3');
+            tom1.play();
+            break;
 
         case "a":
             var tom2 = new Audio('sounds/tom-2.mp3');
             tom2.play();
             break;
-        
+
+        case "ф":
+            var tom2 = new Audio('sounds/tom-2.mp3');
+            tom2.play();
+            break;
+
         case "s":
+            var tom3 = new Audio('sounds/tom-3.mp3');
+            tom3.play();
+            break;
+
+        case "ы":
             var tom3 = new Audio('sounds/tom-3.mp3');
             tom3.play();
             break;
@@ -42,7 +56,17 @@ function makeSound(key) {
             tom4.play();
             break;
 
+        case "в":
+            var tom4 = new Audio('sounds/tom-4.mp3');
+            tom4.play();
+            break;
+
         case "j":
+            var snare = new Audio('sounds/snare.mp3');
+            snare.play();
+            break;
+
+        case "о":
             var snare = new Audio('sounds/snare.mp3');
             snare.play();
             break;
@@ -52,7 +76,17 @@ function makeSound(key) {
             crash.play();
             break;
 
+        case "л":
+            var crash = new Audio('sounds/crash.mp3');
+            crash.play();
+            break;
+
         case "l":
+            var kick = new Audio('sounds/kick-bass.mp3');
+            kick.play();
+            break;
+
+        case "д":
             var kick = new Audio('sounds/kick-bass.mp3');
             kick.play();
             break;
